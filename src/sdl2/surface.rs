@@ -7,6 +7,7 @@ use libc::{c_int, uint32_t};
 use pixels;
 use render::BlendMode;
 use rwops;
+use std::num::FromPrimitive;
 
 pub use sys::surface as ll;
 

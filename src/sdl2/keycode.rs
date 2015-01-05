@@ -1,4 +1,6 @@
 use std::hash::{mod, Hash};
+use std::num::FromPrimitive;
+use std::num::ToPrimitive;
 
 #[deriving(PartialEq, Eq, FromPrimitive, Show, Copy)]
 pub enum KeyCode {
