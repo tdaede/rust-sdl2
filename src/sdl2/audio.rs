@@ -382,11 +382,11 @@ pub struct AudioDeviceLockGuard<'a, CB: 'a> {
     device: &'a mut AudioDevice<CB>
 }
 
-impl<'a, CB> Deref<CB> for AudioDeviceLockGuard<'a, CB> {
+impl<'a, CB> Deref for AudioDeviceLockGuard<'a, CB> {
     fn deref(&self) -> &CB { &self.device.userdata.callback }
 }
 
-impl<'a, CB> DerefMut<CB> for AudioDeviceLockGuard<'a, CB> {
+impl<'a, CB> DerefMut for AudioDeviceLockGuard<'a, CB> {
     fn deref_mut(&mut self) -> &mut CB { &mut self.device.userdata.callback }
 }
 
