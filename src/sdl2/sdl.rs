@@ -1,5 +1,6 @@
 use std::c_str::CString;
 use std::borrow::ToOwned;
+use std::c_str::ToCStr;
 
 use sys::sdl as ll;
 

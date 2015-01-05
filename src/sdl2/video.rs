@@ -7,6 +7,7 @@ use surface::Surface;
 use pixels;
 use SdlResult;
 use std::num::FromPrimitive;
+use std::c_str::ToCStr;
 
 use get_error;
 

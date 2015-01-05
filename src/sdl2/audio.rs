@@ -3,6 +3,7 @@
 use std::ptr;
 use std::mem;
 use std::c_str::CString;
+use std::c_str::ToCStr;
 use std::c_vec::CVec;
 use std::borrow::ToOwned;
 use std::num::FromPrimitive;

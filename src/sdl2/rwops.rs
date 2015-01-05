@@ -1,6 +1,7 @@
 use std::io;
 use std::io::IoResult;
 use libc::{c_void, c_int, size_t};
+use std::c_str::ToCStr;
 use get_error;
 use SdlResult;
 
